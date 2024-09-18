@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #302320;
+    color: white;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column; /
+}
+
+.navbar {
+    background-color: #615F86;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #8D8CAD;
+    padding: 40px; 
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    max-width: 800px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px; 
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    width: 100%;
+}
+
+.profile-details h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.profile-details p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.profile-details .frame {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    user-select: none;
+}
+
+.profile-details .frame:nth-child(odd) {
+    transform: rotate(5deg);
+}
+
+.profile-details .frame:nth-child(even) {
+    transform: rotate(-5deg);
+}
+
+@media (min-width: 600px) {
+    .profile-card {
+        flex-direction: row;
+        text-align: center;
+    }
+    .profile-card img {
+        margin-left:80px;
+        margin-bottom: 0;
+    }
+}
+
+#clickableDiv {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
